@@ -156,13 +156,29 @@ with open(file,"w") as f:
 	tag(f,2,"b","keybind",["key","XF86AudioRaiseVolume"],[["b","action",["name","execute"],[["g","command","sh -c \"pactl set-sink-mute - false ; pactl set-sink-volume 0 +5%\""]] ]] )
 	tag(f,2,"b","keybind",["key","XF86AudioLowerVolume"],[["b","action",["name","execute"],[["g","command","sh -c \"pactl set-sink-mute - false ; pactl set-sink-volume 0 -5%\""]] ]] )
 	tag(f,2,"b","keybind",["key","XF86AudioMute"],[["b","action",["name","execute"],[["g","command","sh -c \"pactl set-sink-mute - toggle ; pactl set-sink-volume 0 20%\""]] ]] )
-
-
-
-
-
-
-
 	keyboard.close()
+
+	mouse = longTag(f,1,"mouse")
+	tag(f,2,"g","dragThreshold","8")
+	tag(f,2,"g","screenEdgeWarpTime","400")
+	tag(f,2,"g","screenEdgeWarpMouse","false")
+	tag(f,2,"b","mousebind",[["action","Press"],["button","A-Left"]],[["s","action",["name","Focus"]],["s","action",["name","Raise"]]])
+	
+	frame = longTag(f,1,"context",["name","Frame"])
+
+	frame.close()
+	mouse.close()
+
+	menu = longTag(f,1,"menu")
+	tag(f,2,"g","file","menu.xml")
+	tag(f,2,"g","hideDelay","200")
+	tag(f,2,"g","middle","yes")
+	tag(f,2,"g","submenuShowDelay","100")
+	tag(f,2,"g","applicationIcons","yes")
+	tag(f,2,"g","manageDesktops","yes")
+	menu.close()
+
+	app = longTag(f,1,"applications")	
+	app.close()
 
 	openbox.close()

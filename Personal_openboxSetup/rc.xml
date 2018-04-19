@@ -549,4 +549,25 @@
 			</action>
 		</keybind>
 	</keyboard>
+	<mouse>
+		<dragThreshold>8</dragThreshold>
+		<screenEdgeWarpTime>400</screenEdgeWarpTime>
+		<screenEdgeWarpMouse>false</screenEdgeWarpMouse>
+		<mousebind action="Press" button="A-Left">
+			<action name="Focus"/>
+			<action name="Raise"/>
+		</mousebind>
+	<context name="Frame">
+	</context>
+	</mouse>
+	<menu>
+		<file>menu.xml</file>
+		<hideDelay>200</hideDelay>
+		<middle>yes</middle>
+		<submenuShowDelay>100</submenuShowDelay>
+		<applicationIcons>yes</applicationIcons>
+		<manageDesktops>yes</manageDesktops>
+	</menu>
+	<applications>
+	</applications>
 </openbox>
