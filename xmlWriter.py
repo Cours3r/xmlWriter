@@ -12,11 +12,15 @@ def tabStr(level):
 	return outStr
 
 class longTag:
-	def __init__(self,f,tabLevel,section):
+	def __init__(self,f,tabLevel,section,arg1=[]):
 		self.section = section
 		self.file = f
 		self.tabs = tabStr(tabLevel)
-		self.file.write(self.tabs + "<{0}>\n".format(self.section))
+		if arg1:
+			openStr = "<{0} {1}=\"{2}\">\n".format(section,arg1[0],arg1[1])
+		else:
+			openStr = "<{0}>\n".format(section)
+		self.file.write(self.tabs + openStr)
 
 	def close(self):
 		self.file.write(self.tabs + "</{0}>\n".format(self.section))
@@ -31,7 +35,13 @@ def tag(f,tabLevel,style,title,arg1,arg2=[]):
 			f.write(tabStr(tabLevel) + "<{0}>{1}</{0}>\n".format(title,arg1))
 	elif (style == "b" or style == "big" or style == 3):
 		if arg1:
-			f.write(tabStr(tabLevel) + "<{0} {1}=\"{2}\">\n".format(title,arg1[0],arg1[1]))
+			if type(arg1[0]) is list:
+				openStr = tabStr(tabLevel) + "<{0}".format(title)
+				for option in arg1:
+					openStr += " {0}=\"{1}\"".format(option[0],option[1])
+				f.write(openStr + ">\n")
+			else:
+				f.write(tabStr(tabLevel) + "<{0} {1}=\"{2}\">\n".format(title,arg1[0],arg1[1]))
 		else:
 			f.write(tabStr(tabLevel) + "<{0}>\n".format(title))
 		for inner in arg2:
