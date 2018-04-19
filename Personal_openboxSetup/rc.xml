@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox>
+	<resistance>
+		<strength>10</strength>
+		<screen_edge_strength>20</screen_edge_strength>
+	</resistance>
+	<focus>
+		<focusNew>yes</focusNew>
+		<followMouse>no</followMouse>
+		<focusLast>yes</focusLast>
+		<focusDelay>200</focusDelay>
+		<raiseOnFocus>no</raiseOnFocus>
+	</focus>
+	<placement>
+		<policy>Smart</policy>
+		<center>yes</center>
+		<monitor>Primary</monitor>
+		<primaryMonitor>1</primaryMonitor>
+	</placement>
+	<theme>
+		<name>modern-grey</name>
+		<titleLayout>LIMC</titleLayout>
+		<keepBorder>no</keepBorder>
+		<animateIconify>yes</animateIconify>
+		<font place="ActiveWindow">
+			<name>Hack</name>
+			<size>7</size>
+			<weight>Normal</weight>
+			<slant>Normal</slant>
+		</font>
+		<font place="InactiveWindow">
+			<name>Hack</name>
+			<size>7</size>
+			<weight>Normal</weight>
+			<slant>Normal</slant>
+		</font>
+		<font place="MenuHeader">
+			<name>Hack</name>
+			<size>7</size>
+			<weight>Normal</weight>
+			<slant>Normal</slant>
+		</font>
+		<font place="MenuHeader">
+			<name>Hack</name>
+			<size>7</size>
+			<weight>Normal</weight>
+			<slant>Normal</slant>
+		</font>
+		<font place="ActiveOnScreenDisplay">
+			<name>Hack</name>
+			<size>7</size>
+			<weight>Normal</weight>
+			<slant>Normal</slant>
+		</font>
+		<font place="InactiveOnScreenDisplay">
+			<name>Hack</name>
+			<size>7</size>
+			<weight>Normal</weight>
+			<slant>Normal</slant>
+		</font>
+	</theme>
+	<desktop>
+		<number>9</number>
+		<firstdesk>1</firstdesk>
+		<names>
+			<name>1</name>
+			<name>2</name>
+			<name>3</name>
+			<name>4</name>
+			<name>5</name>
+			<name>6</name>
+		</names>
+		<popupTime>875</popupTime>
+	</desktop>
+	<resize>
+		<DrawContents>yes</DrawContents>
+		<popupShow>NonPixel</popupShow>
+		<popupPosition>Center</popupPosition>
+		<popupFixedPosisiton>
+			<x>10</x>
+			<y>10</y>
+		</popupFixedPosisiton>
+	</resize>
+	<margins>
+		<top>0</top>
+		<bottom>0</bottom>
+		<left>0</left>
+		<right>0</right>
+	</margins>
+	<dock>
+		<position>TopLeft</position>
+		<floatingX>0</floatingX>
+		<floatingY>0</floatingY>
+		<noStrut>no</noStrut>
+		<stacking>Above</stacking>
+		<direction>Vertical</direction>
+		<autoHide>no</autoHide>
+		<hideDelay>300</hideDelay>
+		<showDelay>300</showDelay>
+		<moveButtom>Midle</moveButtom>
+	</dock>
+	<keyboard>
+		<chainQuitKey>C-g</chainQuitKey>
+		<keybind key="C-S-Backspace">
+			<action name="execute">
+				<command>openbox -- reconfigure</command>
+			</action>
+		</keybind>
+		<keybind key="A-C-Delete">
+			<action name="execute">
+				<command>oblogout</command>
+			</action>
+		</keybind>
+		<keybind key="C-A-Right">
+			<action name="GoToDesktop">
+				<to>right</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="C-A-Left">
+			<action name="GoToDesktop">
+				<to>left</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-S-Right">
+			<action name="SendToDesktop">
+				<to>right</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-S-Left">
+			<action name="SendToDesktop">
+				<to>left</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-1">
+			<action name="GoToDesktop">
+				<to>1</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-S-1">
+			<action name="SendToDesktop">
+				<to>1</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-2">
+			<action name="GoToDesktop">
+				<to>2</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-S-2">
+			<action name="SendToDesktop">
+				<to>2</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-3">
+			<action name="GoToDesktop">
+				<to>3</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-S-3">
+			<action name="SendToDesktop">
+				<to>3</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-4">
+			<action name="GoToDesktop">
+				<to>4</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-S-4">
+			<action name="SendToDesktop">
+				<to>4</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-5">
+			<action name="GoToDesktop">
+				<to>5</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-S-5">
+			<action name="SendToDesktop">
+				<to>5</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-6">
+			<action name="GoToDesktop">
+				<to>6</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-S-6">
+			<action name="SendToDesktop">
+				<to>6</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-l">
+			<action name="UnmaximiseFull"/>
+			<action name="MoveResizeTo">
+				<x>-0</x>
+				<y>0</y>
+				<width>50%</width>
+				<height>100%</height>
+			</action>
+		</keybind>
+		<keybind key="W-h">
+			<action name="UnmaximiseFull"/>
+			<action name="MoveResizeTo">
+				<x>0</x>
+				<y>0</y>
+				<width>50%</width>
+				<height>100%</height>
+			</action>
+		</keybind>
+		<keybind key="W-j">
+			<action name="UnmaximiseFull"/>
+			<action name="MoveResizeTo">
+				<x>0</x>
+				<y>0</y>
+				<width>100%</width>
+				<height>50%</height>
+			</action>
+		</keybind>
+		<keybind key="W-k">
+			<action name="UnmaximiseFull"/>
+			<action name="MoveResizeTo">
+				<x>0</x>
+				<y>-0</y>
+				<width>100%</width>
+				<height>50%</height>
+			</action>
+		</keybind>
+		<keybind key="W-C-h">
+			<action name="UnmaximiseFull"/>
+			<action name="MoveResizeTo">
+				<x>0</x>
+				<y>0</y>
+				<width>50%</width>
+				<height>50%</height>
+			</action>
+		</keybind>
+		<keybind key="W-A-h">
+			<action name="UnmaximiseFull"/>
+			<action name="MoveResizeTo">
+				<x>0</x>
+				<y>-0</y>
+				<width>50%</width>
+				<height>50%</height>
+			</action>
+		</keybind>
+		<keybind key="W-C-l">
+			<action name="UnmaximiseFull"/>
+			<action name="MoveResizeTo">
+				<x>-0</x>
+				<y>0</y>
+				<width>50%</width>
+				<height>50%</height>
+			</action>
+		</keybind>
+		<keybind key="W-A-l">
+			<action name="UnmaximiseFull"/>
+			<action name="MoveResizeTo">
+				<x>-0</x>
+				<y>-0</y>
+				<width>50%</width>
+				<height>50%</height>
+			</action>
+		</keybind>
+		<keybind key="W-n">
+			<action name="MaximizeFull"/>
+		</keybind>
+		<keybind key="W-m">
+			<action name="UnmaximizeFull"/>
+			<action name="MoveResizeTo">
+				<width>40%</width>
+				<height>40%</height>
+			</action>
+		</keybind>
+		<keybind key="S-A-h">
+			<action name="SendToDesktopLeft"/>
+		</keybind>
+		<keybind key="S-A-l">
+			<action name="SendToDesktopRight"/>
+		</keybind>
+		<keybind key="W-S-Right">
+			<action name="DirectionCycleWindows"/>
+		</keybind>
+		<keybind key="W-S-Left">
+			<action name="DirectionCycleWindows"/>
+		</keybind>
+		<keybind key="W-S-Up">
+			<action name="DirectionCycleWindows"/>
+		</keybind>
+		<keybind key="W-S-Down">
+			<action name="DirectionCycleWindows"/>
+		</keybind>
+		<keybind key="A-Escape">
+			<action name="Lower"/>
+			<action name="FocusToBottom"/>
+			<action name="Unfocus"/>
+		</keybind>
+		<keybind key="A-space">
+			<action name="ShowMenu">
+				<menu>client-menu</menu>
+			</action>
+		</keybind>
+		<keybind key="XF86MonBrightnessUp">
+			<action name="execute">
+				<command>xbacklight +10</command>
+			</action>
+		</keybind>
+		<keybind key="XF86MonBrightnessDown">
+			<action name="execute">
+				<command>xbacklight -10</command>
+			</action>
+		</keybind>
+		<keybind key="A-F2">
+			<action name="execute">
+				<command>gmrun</command>
+				<smartnotify>
+					<enabled>yes</enabled>
+					<name>Run Program</name>
+				</smartnotify>
+			</action>
+		</keybind>
+		<keybind key="W-S-d">
+			<action name="execute">
+				<command>dmenu_run -i -nb '#191919' -nf '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'</command>
+			</action>
+		</keybind>
+		<keybind key="A-F4">
+			<action name="Close"/>
+		</keybind>
+		<keybind key="A-F5">
+			<action name="Iconify"/>
+		</keybind>
+		<keybind key="A-F6">
+			<action name="ToggleDecorations"/>
+		</keybind>
+		<keybind key="A-F8">
+			<action name="ToggleShowDesktop"/>
+		</keybind>
+		<keybind key="W-d">
+			<action name="ToggleShowDesktop"/>
+		</keybind>
+		<keybind key="C-A-e">
+			<action name="execute">
+				<command>thunar</command>
+			</action>
+		</keybind>
+		<keybind key="W-e">
+			<action name="execute">
+				<command>allacrity -e ranger</command>
+			</action>
+		</keybind>
+		<keybind key="C-A-t">
+			<action name="execute">
+				<command>allacrity -e htop</command>
+			</action>
+		</keybind>
+		<keybind key="W-t">
+			<action name="execute">
+				<command>allacrity</command>
+			</action>
+		</keybind>
+		<keybind key="C-A-b">
+			<action name="execute">
+				<command>qutebrowser</command>
+			</action>
+		</keybind>
+		<keybind key="W-b">
+			<action name="execute">
+				<command>firefox</command>
+			</action>
+		</keybind>
+		<keybind key="W-a">
+			<action name="execute">
+				<command>allacrity -e vim</command>
+			</action>
+		</keybind>
+		<keybind key="C-A-a">
+			<action name="execute">
+				<command>atom</command>
+			</action>
+		</keybind>
+		<keybind key="W-r">
+			<action name="execute">
+				<command>rofi-theme-selector</command>
+			</action>
+		</keybind>
+		<keybind key="W-Escape">
+			<action name="execute">
+				<command>xkill</command>
+			</action>
+		</keybind>
+		<keybind key="W-Tab">
+			<action name="execute">
+				<command>client-list-combined-menu</command>
+			</action>
+		</keybind>
+		<keybind key="C-Shift-space">
+			<action name="execute">
+				<command>rofi -modi drun,run -show drun -fullscreen -font "Roboto Regular 8"</command>
+			</action>
+		</keybind>
+		<keybind key="C-space">
+			<action name="execute">
+				<command>rofi -modi drun,run -show "drun" -font "Roboto Regular 8"</command>
+			</action>
+		</keybind>
+		<keybind key="C-A-Space">
+			<action name="execute">
+				<command>rofi -show run</command>
+			</action>
+		</keybind>
+		<keybind key="W-F11">
+			<action name="execute">
+				<command>rofi -modi drun,run -show drun -fullscreen -font "Roboto Regular 8"</command>
+			</action>
+		</keybind>
+		<keybind key="W-F12">
+			<action name="execute">
+				<command>rofi -modi drun,run -show "drun" -font "Roboto Regular 8"</command>
+			</action>
+		</keybind>
+		<keybind key="W-space">
+			<action name="ShowMenu">
+				<command>root-menu</command>
+			</action>
+		</keybind>
+		<keybind key="W-A-Left">
+			<action name="UnmaximiseFull"/>
+			<action name="MoveResizeTo">
+				<x>0</x>
+				<y>0</y>
+				<width>50%</width>
+				<height>100%</height>
+			</action>
+		</keybind>
+		<keybind key="W-A-Right">
+			<action name="UnmaximiseFull"/>
+			<action name="MoveResizeTo">
+				<x>-0</x>
+				<y>0</y>
+				<width>50%</width>
+				<height>100%</height>
+			</action>
+		</keybind>
+		<keybind key="A-r">
+			<action name="Close"/>
+		</keybind>
+		<keybind key="A-m">
+			<action name="Move"/>
+		</keybind>
+		<keybind key="W-q">
+			<action name="Close"/>
+		</keybind>
+		<keybind key="W-F1">
+			<action name="execute">
+				<command>exo-open --launch webbrowser</command>
+			</action>
+		</keybind>
+		<keybind key="W-F4">
+			<action name="execute">
+				<command>gimp</command>
+			</action>
+		</keybind>
+		<keybind key="W-F6">
+			<action name="execute">
+				<command>vlc</command>
+			</action>
+		</keybind>
+		<keybind key="W-F7">
+			<action name="execute">
+				<command>virtualbox</command>
+			</action>
+		</keybind>
+		<keybind key="W-F8">
+			<action name="execute">
+				<command>thunar</command>
+			</action>
+		</keybind>
+		<keybind key="W-F10">
+			<action name="execute">
+				<command>spotify</command>
+			</action>
+		</keybind>
+		<keybind key="W-p">
+			<action name="execute">
+				<command>obmenu3</command>
+			</action>
+		</keybind>
+		<keybind key="W-u">
+			<action name="execute">
+				<command>obkey</command>
+			</action>
+		</keybind>
+		<keybind key="W-s">
+			<action name="execute">
+				<command>spotify</command>
+			</action>
+		</keybind>
+		<keybind key="W-i">
+			<action name="execute">
+				<command>pavucontrol</command>
+			</action>
+		</keybind>
+		<keybind key="W-v">
+			<action name="execute">
+				<command>nitrogen</command>
+			</action>
+		</keybind>
+		<keybind key="W-o">
+			<action name="execute">
+				<command>obconf</command>
+			</action>
+		</keybind>
+		<keybind key="W-S-x">
+			<action name="execute">
+				<command>betterlockscreen -l</command>
+			</action>
+		</keybind>
+		<keybind key="XF86AudioRaiseVolume">
+			<action name="execute">
+				<command>sh -c "pactl set-sink-mute - false ; pactl set-sink-volume 0 +5%"</command>
+			</action>
+		</keybind>
+		<keybind key="XF86AudioLowerVolume">
+			<action name="execute">
+				<command>sh -c "pactl set-sink-mute - false ; pactl set-sink-volume 0 -5%"</command>
+			</action>
+		</keybind>
+		<keybind key="XF86AudioMute">
+			<action name="execute">
+				<command>sh -c "pactl set-sink-mute - toggle ; pactl set-sink-volume 0 20%"</command>
+			</action>
+		</keybind>
+	</keyboard>
+</openbox>
