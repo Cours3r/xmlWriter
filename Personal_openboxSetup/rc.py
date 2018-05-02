@@ -162,9 +162,14 @@ with open(file,"w") as f:
 	tag(f,2,"g","dragThreshold","8")
 	tag(f,2,"g","screenEdgeWarpTime","400")
 	tag(f,2,"g","screenEdgeWarpMouse","false")
-	tag(f,2,"b","mousebind",[["action","Press"],["button","A-Left"]],[["s","action",["name","Focus"]],["s","action",["name","Raise"]]])
-	
+
 	frame = longTag(f,1,"context",["name","Frame"])
+	tag(f,2,"b","mousebind",[["action","Press"],["button","A-Left"]],[["s","action",["name","Focus"]],["s","action",["name","Raise"]]])
+	tag(f,2,"b","mousebind",[["action","Click"],["button","A-Left"]],[["s","action",["name","Unshade"]]])
+	tag(f,2,"b","mousebind",[["action","Drag"],["button","A-Left"]],[["s","action",["name","Move"]]])
+	
+	tag(f,2,"b","mousebind",[["action","Press"],["button","A-Right"]],[["s","action",["name","Focus"]],["s","action",["name","Raise"]],["s","action",["name","Unshade"]]])
+	tag(f,2,"b","mousebind",[["action","Drag"],["button","A-Right"]],[["s","action",["name","Resize"]]])
 
 	frame.close()
 	mouse.close()

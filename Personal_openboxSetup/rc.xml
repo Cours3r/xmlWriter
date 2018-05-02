@@ -553,11 +553,25 @@
 		<dragThreshold>8</dragThreshold>
 		<screenEdgeWarpTime>400</screenEdgeWarpTime>
 		<screenEdgeWarpMouse>false</screenEdgeWarpMouse>
+	<context name="Frame">
 		<mousebind action="Press" button="A-Left">
 			<action name="Focus"/>
 			<action name="Raise"/>
 		</mousebind>
-	<context name="Frame">
+		<mousebind action="Click" button="A-Left">
+			<action name="Unshade"/>
+		</mousebind>
+		<mousebind action="Drag" button="A-Left">
+			<action name="Move"/>
+		</mousebind>
+		<mousebind action="Press" button="A-Right">
+			<action name="Focus"/>
+			<action name="Raise"/>
+			<action name="Unshade"/>
+		</mousebind>
+		<mousebind action="Drag" button="A-Right">
+			<action name="Resize"/>
+		</mousebind>
 	</context>
 	</mouse>
 	<menu>
